@@ -1,4 +1,3 @@
-# type: ignore
 def increment(x: int) -> int:
     if isinstance(x, bool):
         raise TypeError('x should be an int')

@@ -27,7 +27,7 @@ def test_type_error_on_boolean() -> None:
 # the code. Finish by making sure that MyPy ignores this (on purpose) ill typed line of code.
 def test_type_error_on_string() -> None:
     with pytest.raises(expected_exception=TypeError):
-        increment('hello')
+        increment('hello')  # type: ignore
 
 
 # -- Exercise 4 --
